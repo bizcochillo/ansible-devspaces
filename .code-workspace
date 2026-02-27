@@ -1,0 +1,20 @@
+{
+	"settings": {
+		"ansible.lightspeed.suggestions.enabled": true,
+		"ansible.lightspeed.enabled": true,
+        "ansible.ansible.useFullyQualifiedCollectionNames": true,
+        "ansible.validation.enabled": true,
+        "ansible.validation.lint.enabled": true,
+        "files.trimTrailingWhitespace": true,
+        "files.trimFinalNewlines": true,
+        "files.insertFinalNewline": true,
+        "ansible.validation.lint.arguments": "--profile production --offline",
+        "openshiftToolkit.showWelcomePage": false
+	},
+	"folders": [
+		{
+			"name": "ansible-devspaces",
+			"path": "/projects/ansible-devspaces"
+		}
+	]
+}
