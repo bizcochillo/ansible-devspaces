@@ -1,5 +1,11 @@
 # Put additional workspace config here that you want to run on workspace startup
 
+# Add the workspace bin directory to the PATH
+if [[ -d "${PROJECTS_ROOT}/bin" ]]
+then
+  export PATH="${PROJECTS_ROOT}/bin:$PATH"
+fi
+
 if [[ -d ${PROJECTS_ROOT}/.venv ]]
 then
   source ${PROJECTS_ROOT}/.venv/bin/activate
