@@ -3,6 +3,15 @@ attributes:
   controller.devfile.io/storage-type: per-workspace
 metadata:
   name: ansible-devspaces
+projects:
+  - name: molecule-test
+    git:
+      remotes:
+        origin: https://github.com/wzzrd/molecule_test.git
+      checkoutFrom:
+        remote: origin
+        revision: main
+    clonePath: molecule_test
 components:
   - name: dev-tools
     container:
@@ -46,7 +55,7 @@ components:
       mountSources: true
       args:
         - '-c'
-        - '${PROJECT_SOURCE}/.workspace-init/init-python-venv.sh'
+        - '${PROJECTS_ROOT}/.workspace-init/init-python-venv.sh'
       command:
         - /bin/bash
       env:
