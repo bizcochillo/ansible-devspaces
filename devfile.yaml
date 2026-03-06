@@ -55,7 +55,7 @@ components:
       mountSources: true
       args:
         - '-c'
-        - '${PROJECTS_ROOT}/.workspace-init/init-python-venv.sh'
+        - 'ls -lR ${PROJECTS_ROOT} && ${PROJECTS_ROOT}/.workspace-init/init-python-venv.sh'
       command:
         - /bin/bash
       env:
