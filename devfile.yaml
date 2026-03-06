@@ -55,7 +55,7 @@ components:
       mountSources: true
       args:
         - '-c'
-        - '${PROJECTS_ROOT}/ansible-devspaces/.workspace-init/init-python-venv.sh'
+        - '${PROJECTS_ROOT}/.workspace-init/init-python-venv.sh'
       command:
         - /bin/bash
       env:
